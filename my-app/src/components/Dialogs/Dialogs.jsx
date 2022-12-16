@@ -3,7 +3,6 @@ import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
-
 const Dialogs = (props) => {
 
     let state = props.dialogsPage;
@@ -13,7 +12,7 @@ const Dialogs = (props) => {
     let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = () => {
-        props.senMessage();
+        props.sendMessage();
     }
 
     let onNewMessageChange = (e) => {
