@@ -1,0 +1,10 @@
+.AvaDescr {
+    
+    height: 100px;
+    border-radius: 100%;
+}
+
+.selectedPage {
+    font-weight: bold;
+    background-color: tomato;
+}

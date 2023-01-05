@@ -1,16 +1,23 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
+import shapka from '../../images/Diagram.jpg';
+import ava from '../../images/ava.jpg';
+
 
 const ProfileInfo = () => {
     return (
-        <div>
+        <div className={s.body}>
             <div>
-                <img
-                    src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350'/>
+                <img class={s.shapka}
+                    src={shapka}/>
             </div>
+
             <div className={s.descriptionBlock}>
-                ava + description
+                <img  src={ava} className={s.ava} />
             </div>
+
+            <div className={s.namePeople}>Какой-то человек</div>
+            <button className={s.profileredaction}>Редактировать профиль</button>
         </div>
     )
 }

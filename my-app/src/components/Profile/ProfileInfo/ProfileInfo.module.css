@@ -1,3 +1,55 @@
+.body {
+    position: relative;
+}
+
 .descriptionBlock {
-    padding: 10px;
+    position: absolute;
+    left: 2%;
+    right: 100%;
+    top: 100px;
+    bottom: 0%;
+
+}
+
+.shapka {
+
+    position: absolute;
+    width: 100%;
+    height: 200px;
+
+}
+
+.ava {
+    width: 150px;
+    height: 150px;
+}
+
+.namePeople {
+    position: absolute;
+    left: 20%;
+    right: 100%;
+    top: 200px;
+    bottom: 0%;
+    font-family: 'VK Sans Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: -0.035em;
+}
+
+.profileredaction {
+    width: 162px;
+height: 60px;
+    position: absolute;
+    left: 80%;
+    right: 0%;
+    top: 200px;
+    bottom: 0%;
+    font-family: 'VK Sans Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: -0.035em;
 }
