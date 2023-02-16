@@ -1,23 +1,23 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
-import shapka from '../../images/Diagram.jpg';
-import ava from '../../images/ava.jpg';
+import Preloader from "../../common/Preloader/Preloader";
+import ProfileStatus from './ProfileStatus';
 
+const ProfileInfo = (props) => {
+    if (!props.profile) {
+        return <Preloader />
+    }
 
-const ProfileInfo = () => {
     return (
-        <div className={s.body}>
+        <div>
             <div>
-                <img class={s.shapka}
-                    src={shapka}/>
+                <img
+                    src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350'/>
             </div>
-
             <div className={s.descriptionBlock}>
-                <img  src={ava} className={s.ava} />
+                <img src={props.profile.photos.large} />
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
             </div>
-
-            <div className={s.namePeople}>Какой-то человек</div>
-            <button className={s.profileredaction}>Редактировать профиль</button>
         </div>
     )
 }
