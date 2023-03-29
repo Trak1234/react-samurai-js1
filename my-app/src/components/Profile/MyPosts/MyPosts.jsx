@@ -7,7 +7,7 @@ import {Textarea} from "../../common/Preloader/FormsControls/FormsControl";
 
 const maxLength10 = maxLengthCreator(10);
 
-let AddNewPostForm = (props) => {
+let AddNewPostForm = React.memo((props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
@@ -21,7 +21,7 @@ let AddNewPostForm = (props) => {
             </div>
         </form>
     )
-}
+})
 
 let AddNewPostFormRedux = reduxForm({form:'ProfileAddNewPostForm'})(AddNewPostForm);
 

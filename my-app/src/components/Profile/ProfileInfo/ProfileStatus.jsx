@@ -2,7 +2,7 @@ import React, { createRef } from 'react';
 
 
 class ProfileStatus extends React.Component {
-    statusImputRef = createRef();
+   
     componentDidUpdate(prevProps, prevState) {
 
         if (prevProps.status !== this.props.status) {
@@ -46,10 +46,10 @@ class ProfileStatus extends React.Component {
 
             {this.state.editMode && <div  ><input
                 onCnange={this.onStatusChange}
-                ref={this.statusImputRef}
+                
                 autoFocus={true}
-                onBlur={this.deactiveEditMode}
-                value={this.status} /></div>}
+                onBlur={this.deactiveEditMode.bind(this)}
+                value={this.state.status} /></div>}
         </div>
 
     }
